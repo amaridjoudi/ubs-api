@@ -1,0 +1,27 @@
+{
+  "name": "ubs-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start:dev": "NODE_ENV=dev nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amaridjoudi/ubs-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amaridjoudi/ubs-api/issues"
+  },
+  "homepage": "https://github.com/amaridjoudi/ubs-api#readme",
+  "devDependencies": {
+    "nodemon": "~2.0.6"
+  },
+  "dependencies": {
+    "config": "~3.3.3",
+    "express": "~4.17.1"
+  }
+}
