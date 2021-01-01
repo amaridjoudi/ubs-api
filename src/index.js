@@ -1,7 +1,8 @@
 const express = require('express');
+const config = require('config');
 const app = express();
 
-const PORT = 3000;
+const { port: PORT } = config.get('api');
 
 app.get('/api/v1/ubs/account', (req, res) => {
   res.send();
