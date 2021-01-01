@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start:dev": "nodemon"
+    "start:dev": "NODE_ENV=dev nodemon"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "nodemon": "~2.0.6"
   },
   "dependencies": {
+    "config": "~3.3.3",
     "express": "~4.17.1"
   }
 }
