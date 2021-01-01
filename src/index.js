@@ -1,6 +1,7 @@
 const express = require('express');
 const config = require('config');
 const app = express();
+
 app.use(express.json());
 
 let response = {};
@@ -13,10 +14,9 @@ app.get(`${prefix}/account`, (req, res) => {
 });
 
 app.put(`${prefix}/account`, (req, res) => {
-const {body} = req;
-response = body;
-
-res.send(response);
+  const { body: response } = req;
+  
+  res.send(response);
 });
 
 app.delete(`${prefix}/account`, (req, res) => {
